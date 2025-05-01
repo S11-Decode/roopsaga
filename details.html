@@ -21,6 +21,22 @@
 
     <title>Ecommerce Website</title>
   </head>
+  <script>
+  const variantLinks = document.querySelectorAll('.variant__link');
+  const mainImage = document.querySelector('.details__img');
+
+  variantLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const newImg = this.getAttribute('data-img');
+      mainImage.setAttribute('src', newImg);
+
+      // Optional: Active class
+      variantLinks.forEach(l => l.classList.remove('active-variant'));
+      this.classList.add('active-variant');
+    });
+  });
+</script>
   <body>
     <!--=============== HEADER ===============-->
     <header class="header">
