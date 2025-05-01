@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <head>
+  ...
+  <style>
+    .variant__list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    .variant__link {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #f1f1f1;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .variant__link:hover,
+    .variant__link.active-variant {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
