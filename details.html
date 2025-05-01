@@ -147,108 +147,78 @@
         </ul>
       </section>
       <!--=============== DETAILS ===============-->
-      <section class="details section--lg">
-        <div class="details__container container grid">
-          <div class="details__group">
-            <img
-              src="./assets/img/1.avif"
-              alt=""
-              class="details__img"
-            />
-            <div class="details__small-images grid">
-              <img
-                src="./assets/img/2.avif"
-                alt=""
-                class="details__small-img"
-              />
-              <img
-                src="./assets/img/3.avif"
-                alt=""
-                class="details__small-img"
-                />
-              <img
-                src="./assets/img/4.avif"
-                alt=""
-                class="details__small-img"
-                />
-              <img
-                src="./assets/img/5.avif"
-                alt=""
-                class="details__small-img"
-                />
-              <img
-                src="./assets/img/6.avif"
-                alt=""
-                class="details__small-img"
-                />
-              <img
-                src="./assets/img/7.avif"
-                alt=""
-                class="details__small-img"
-                />
-              <img
-                src="./assets/img/8.avif"
-                alt=""
-                class="details__small-img"
-                />
-              <img
-                src="./assets/img/9.avif"
-                alt=""
-                class="details__small-img"
-                />
-              <img
-                src="./assets/img/10.avif"
-                alt=""
-                class="details__small-img"
-                />
-              <img
-                src="./assets/img/11.avif"
-                alt=""
-                class="details__small-img"
-              />
-              <img
-                src="./assets/img/12.avif"
-                alt=""
-                class="details__small-img"
-              />
-            </div>
-          </div>
-          <div class="details__group">
-            <h3 class="details__title">Henley Shirt</h3>
-            <p class="details__brand">Brand: <span>adidas</span></p>
-            <div class="details__price flex">
-              <span class="new__price">$116</span>
-              <span class="old__price">$200.00</span>
-              <span class="save__price">25% Off</span>
-            </div>
-            <p class="short__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptate, fuga. Quo blanditiis recusandae facere nobis cum optio,
-              inventore aperiam placeat, quis maxime nam officiis illum? Optio
-              et nisi eius, inventore impedit ratione sunt, cumque, eligendi
-              asperiores iste porro non error?
-            </p>
-            <ul class="products__list">
-              <li class="list__item flex">
-                <i class="fi-rs-crown"></i> 1 Year Al Jazeera Brand Warranty
-              </li>
-              <li class="list__item flex">
-                <i class="fi-rs-refresh"></i> 30 Days Return Policy
-              </li>
-              <li class="list__item flex">
-                <i class="fi-rs-credit-card"></i> Cash on Delivery available
-              </li>
-            </ul>
-            <div class="details__variants flex">
-  <span class="details__variant-title">Choose Product</span>
-  <ul class="variant__list flex">
-    <li><a href="#" class="variant__link" data-img="./assets/img/1.avif">Product 1</a></li>
-    <li><a href="#" class="variant__link" data-img="./assets/img/2.avif">Product 2</a></li>
-    <li><a href="#" class="variant__link" data-img="./assets/img/3.avif">Product 3</a></li>
-    <li><a href="#" class="variant__link" data-img="./assets/img/4.avif">Product 4</a></li>
-    <li><a href="#" class="variant__link" data-img="./assets/img/5.avif">Product 5</a></li>
-  </ul>
-</div>
+     <section class="details section--lg">
+  <div class="details__container container grid">
+    <!-- Product Images Section -->
+    <div class="details__group">
+      <img src="./assets/img/1.avif" alt="Main product image" class="details__img" id="main-product-img" />
+      
+      <div class="details__small-images grid">
+        <img src="./assets/img/2.avif" alt="Product image 2" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/3.avif" alt="Product image 3" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/4.avif" alt="Product image 4" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/5.avif" alt="Product image 5" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/6.avif" alt="Product image 6" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/7.avif" alt="Product image 7" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/8.avif" alt="Product image 8" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/9.avif" alt="Product image 9" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/10.avif" alt="Product image 10" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/11.avif" alt="Product image 11" class="details__small-img" onclick="changeImage(this)" />
+        <img src="./assets/img/12.avif" alt="Product image 12" class="details__small-img" onclick="changeImage(this)" />
+      </div>
+    </div>
+
+    <!-- Product Details Section -->
+    <div class="details__group">
+      <h3 class="details__title">Henley Shirt</h3>
+      <p class="details__brand">Brand: <span>adidas</span></p>
+
+      <div class="details__price flex">
+        <span class="new__price">$116</span>
+        <span class="old__price">$200.00</span>
+        <span class="save__price">25% Off</span>
+      </div>
+
+      <p class="short__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, fuga. Quo blanditiis recusandae facere nobis cum optio, inventore aperiam placeat, quis maxime nam officiis illum? Optio et nisi eius, inventore impedit ratione sunt, cumque, eligendi asperiores iste porro non error?
+      </p>
+
+      <ul class="products__list">
+        <li class="list__item flex"><i class="fi-rs-crown"></i> 1 Year Al Jazeera Brand Warranty</li>
+        <li class="list__item flex"><i class="fi-rs-refresh"></i> 30 Days Return Policy</li>
+        <li class="list__item flex"><i class="fi-rs-credit-card"></i> Cash on Delivery available</li>
+      </ul>
+
+      <!-- Product Variants Section -->
+      <div class="details__variants flex">
+        <span class="details__variant-title">Choose Product</span>
+        <ul class="variant__list flex">
+          <li><a href="#" class="variant__link active" data-img="./assets/img/1.avif" onclick="changeImageVariant(this)">Product 1</a></li>
+          <li><a href="#" class="variant__link" data-img="./assets/img/2.avif" onclick="changeImageVariant(this)">Product 2</a></li>
+          <li><a href="#" class="variant__link" data-img="./assets/img/3.avif" onclick="changeImageVariant(this)">Product 3</a></li>
+          <li><a href="#" class="variant__link" data-img="./assets/img/4.avif" onclick="changeImageVariant(this)">Product 4</a></li>
+          <li><a href="#" class="variant__link" data-img="./assets/img/5.avif" onclick="changeImageVariant(this)">Product 5</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for Image Changing -->
+<script>
+  function changeImage(image) {
+    document.getElementById('main-product-img').src = image.src;
+  }
+
+  function changeImageVariant(variant) {
+    var links = document.querySelectorAll('.variant__link');
+    links.forEach(link => link.classList.remove('active'));
+    variant.classList.add('active');
+
+    var imgSrc = variant.getAttribute('data-img');
+    document.getElementById('main-product-img').src = imgSrc;
+  }
+</script>
             <ul class="details__meta">
               <li class="meta__list flex"><span>SKU:</span>FWM15VKT</li>
               <li class="meta__list flex">
